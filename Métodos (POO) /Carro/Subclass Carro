@@ -1,0 +1,20 @@
+package Métodos;
+
+// Criar um método só com modelo, outro com modelo e cor e outro com modelo cor e preço | e um vazio com modelo cor e preço
+
+
+public class Usocarro {
+	public static void main(String[] args) {
+		Carro c1 = new Carro();
+		Carro c2 = new Carro("Honda");
+		System.out.println(c2.modelo);
+		Carro c3 = new Carro ("Honda ", "Preto ");
+		System.out.println(c3.modelo + c3.cor);
+		Carro c4 = new Carro("Honda ", "Preto ", 100000);
+		System.out.println(c4.modelo + c4.cor + c4.preço);
+		c1.ligar();
+		c1.desligar();
+		c1.acelerar();
+		c1.frear();
+	}
+}
