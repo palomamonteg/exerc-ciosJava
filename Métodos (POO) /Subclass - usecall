@@ -1,0 +1,20 @@
+package Métodos;
+
+public class Usocalc {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//Usar objeto do tipo Calculadora e usar o método somar
+		Calculadora c1 = new Calculadora();
+		c1.somar(5, 4);
+		c1.somar(10, 5, 40);
+		c1.subtrair(40, 10);
+		c1.subtrair(190, 90, 10);
+		c1.multiplicar(10, 2);
+		c1.multiplicar(6, 6, 2);
+		c1.dividir(20, 2);
+		c1.dividir(400, 4, 2);
+
+	}
+
+}
