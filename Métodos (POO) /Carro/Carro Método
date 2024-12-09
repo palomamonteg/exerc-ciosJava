@@ -1,0 +1,65 @@
+package Métodos;
+
+public class Carro {
+	String modelo;
+	String cor;
+	double preço;
+	boolean estado = false;
+	
+	public Carro () {
+		
+	}
+	public Carro (String modelo) {
+		this.modelo=modelo;
+			
+		}	
+	public Carro (String modelo, String cor) {
+		this.modelo=modelo;
+		this.cor=cor;
+	}
+	
+	public Carro (String modelo, String cor, double preço) {
+		this.modelo=modelo;
+		this.cor=cor;
+		this.preço=preço;
+		
+	}
+	public void ligar() { 
+		if(estado == true) {
+			System.out.println("Ligando...");
+		}
+		else {
+			System.out.println("O carro já está ligado");
+		} 
+	}
+	
+	public void desligar() { 
+		if (estado == true) {
+			System.out.println("O carro está desligando");
+		}
+		else {
+			System.out.println("O carro já está desligado");
+		}
+	}
+	
+	public void acelerar() { 
+		if (estado == true) {
+			System.out.println("O carro está acelerando");
+		}
+		else {
+			System.out.println("O carro está acelerando");
+		}
+	}
+	
+	public void frear() {
+		if (estado == true) {
+			System.out.println("O carro está freando");
+		}
+		else {
+			System.out.printf("O carro freou");
+		}
+	}
+	
+	
+}
+	
