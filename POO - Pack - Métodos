@@ -1,4 +1,4 @@
-// Classe Calculadora -> Somar, Subtrair, Multiplicar, Dividir 
+// Classe Calculadora -> Somar, Subtrair, Multiplicar, Dividir -> Polimorfismo = várias formas para a mesma coisa
 
 package Métodos;
 
