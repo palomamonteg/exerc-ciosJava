@@ -12,3 +12,56 @@ public class exemplo4 {
 	}
 
 }
+
+......................................................
+
+package aula01;
+
+public class exemplo04 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int a = 3;
+		int b = 4;
+		int c = 7;
+		System.out.println(!(a>b)&&(a<c));
+
+	}
+
+}
+
+..................................................
+package aula01;
+
+public class exemplo6 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int a = 3;
+		int b = 4;
+		int c = 7;
+		
+		if(a++>=b)
+			System.out.println(--c);
+		else
+			System.out.println(c++);
+
+	}
+
+}
+
+..................................................
+package aula01;
+
+public class exemplo7 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int a = 3;
+		System.out.println(a%2==0?++a:a++); // aqui estão if e else = :
+
+	}
+
+}
+
+................................................
