@@ -1,0 +1,21 @@
+//entrada e saída  
+
+package atividades;
+
+import java.util.Scanner;
+
+public class ScannerEntradaDados {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner teclado = new Scanner(System.in);
+		System.out.println("Digite o nome do aluno: ");
+		String nome = teclado.nextLine(); 
+		System.out.println("Digite a nota: ");
+		float nota = teclado.nextFloat();
+		System.out.printf("A nota de %s é %.2f", nome, nota);
+
+	}
+
+}
+
