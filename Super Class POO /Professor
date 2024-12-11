@@ -1,0 +1,18 @@
+package heranca;
+
+public class Professor extends Pessoa {
+	double salario;
+	
+	public Professor(String nome, String cpf, String telefone, double salario) {
+		super(nome, cpf, telefone);
+		// TODO Auto-generated constructor stub
+		
+	}
+	public void diversao() {
+		System.out.println("Aplicando prova");
+	}
+
+	public void certificar() {
+		System.out.println("Deu ruim");
+}
+}
