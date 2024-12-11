@@ -1,0 +1,15 @@
+package heranca;
+
+public class Escola {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Aluno a1 = new Aluno("Aluno", "012345678910", "81984490901");
+		a1.sofrer();
+		
+		Professor p1 = new Professor("Glaucio", "856979376929", "94868938", 3500);
+		p1.certificar();
+
+	}
+
+}
