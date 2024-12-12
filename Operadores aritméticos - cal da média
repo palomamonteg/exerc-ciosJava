@@ -1,0 +1,8 @@
+class Main {
+    public static void main(String[] args) {
+        int n1 = 9;
+        int n2 = 9;
+        float n = (n1+n2)/2;
+        System.out.printf("A média é %.2f ", n);
+    }
+}
