@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        String valor = "9";
+        double valorn = Double.parseDouble(valor) + 1;
+        float valorn2 = Float.parseFloat(valor) + 1;
+        int valorn3 = Integer.parseInt(valor) + 1;
+        System.out.println(valorn);
+        System.out.println(valorn2);
+        System.out.println(valorn3);
+    }
+}
