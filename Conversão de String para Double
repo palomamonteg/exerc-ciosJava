@@ -1,0 +1,10 @@
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        String valor = "9";
+        double valorn = Double.parseDouble(valor) + 1; /*Porque se permancer como String não irá somar, então é necessário converter para ocorra a soma correta /*
+        System.out.print(valorn)
+        ;
+    }
+}
