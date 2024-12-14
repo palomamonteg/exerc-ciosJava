@@ -1,0 +1,16 @@
+public class Atv5 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		double n = Math.pow(5, 2); /*Exponenciação*/
+		double x = Math.sqrt(25); /*Raiz quadrada*/
+		double v = Math.cbrt(27); /*Raiz cubica*/
+		double pi = Math.PI; /*PI PI é uma constante -> seu valor não altera. */ 
+		System.out.println(n);
+		System.out.println(x);
+		System.out.println(v);
+		System.out.println(pi);
+
+	}
+
+}
