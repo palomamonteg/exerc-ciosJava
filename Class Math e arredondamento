@@ -1,0 +1,23 @@
+public class Atv3 {
+	
+	/* Class Math -> Arredondamento -> Math.floor, Math.ceil, Math.round, Math.abs */
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		float v = 8.9f;
+		float v2 = 8.2f;
+		int v3 = -10;
+		int x = (int /* typecast*/) Math.floor(v); /* Math floor arredonda para baixo  */
+		int x1 = (int) Math.ceil(v); /* Math ceil arredonda para cima  */
+		int x2 = (int) Math.round(v); /* round trabalha com arredondamento aritmético, Se for 8.2 ele arredonda para 8, se for 8.9 ele arredonda para 9.*/
+		int xx = (int) Math.round(v2);
+		int x4 = Math.abs(v3); /* abs ignora o sinal, deixando apenas o valor. -10 = 10 */
+		System.out.println(x);   
+		System.out.println(x1);
+		System.out.println(x2);
+		System.out.println(xx);
+		System.out.println(x4);
+
+	}
+
+}
