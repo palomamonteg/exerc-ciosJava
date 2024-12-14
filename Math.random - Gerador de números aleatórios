@@ -1,0 +1,18 @@
+package atividades;
+
+public class Atv6 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		double ale = Math.random(); /* Gera um número entre 0 e 1 */ 
+		int n = (int) (5 + ale * (10 - 5)); /* Gerar um número aleatório entre 5 e 10*/
+		int n2 = (int) (1 + ale * (10 - 1));/* Gerar um número aleatório entre 1 e 10*/
+		int n3 = (int) (15 + ale * (50 - 15));
+		System.out.println(ale);
+		System.out.println(n);
+		System.out.println(n2);
+		System.out.println(n3);
+	
+	}
+
+}
