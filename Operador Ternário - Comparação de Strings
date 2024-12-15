@@ -1,0 +1,17 @@
+/*Para objetos não se utiliza == e sim equals */ 
+
+public class ComparacaoString {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String nome1 = "Paloma";
+		String nome2 = "Paloma";
+		String nome3 = new String ("Paloma");
+		String res;
+		/* res = (nome1==nome2?"igual":"diferente");  Todos os 3 valores são iguais, mas pelo fato de serem objetos diferentes mostra que são valores diferentes, pode-se resolver isso usando o método equals.*/ 
+		res = (nome1.equals(nome3))?"igual":"diferente"; 
+		System.out.println(res);
+
+	}
+
+}
