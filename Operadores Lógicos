@@ -1,0 +1,19 @@
+public class OperadoresLogicos {
+	public static void main (String[] args) {
+		int x, y, z;
+		boolean r;
+		boolean r2;
+		boolean r3;
+		x = 4;
+		y = 7;
+		z = 12;
+		r = (x<y != y>z)?true:false;
+		r2 = (x<y && y<z)?true:false;
+		r3 = (y>z || x<y)?true:false;
+		System.out.println(r);
+		System.out.println(r2);
+		System.out.println(r3);
+
+	 }
+ 
+}
