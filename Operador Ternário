@@ -1,0 +1,15 @@
+public class Operadorternario {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int n1, n2, r;
+		n1 = 14;
+		n2 = 8;
+		r = (n1>n2)?0:1; /* se n1 for maior que n2 mostra o 0, se não mostra o 1 */ 
+	/*	r = n1>n2?n1:n2; aqui vai mostrar o valor */
+	/*	r = n1>n2?n1+n2:n1-n2; se n1 for maior que n2 -> soma, se não subtrai */
+		System.out.println(r);
+
+	}
+
+}
