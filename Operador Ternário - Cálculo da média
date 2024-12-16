@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Atividade1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner entrada = new Scanner(System.in);
+		System.out.print("Digite seu nome: ");
+		String nome = entrada.next();
+		System.out.print("\nDigite a primeira nota: ");
+		int nota = entrada.nextInt();
+		System.out.print("\nDigite a segunda nota: ");
+		int nota2 = entrada.nextInt();
+		double media = (nota + nota2) / 2;
+		String r = Double.toString(media);
+		r = media>7?"Aprovado!":"Reprovado!";
+		System.out.printf("\nA média de %s é %.2f. ", nome, media);
+		System.out.println(r);
