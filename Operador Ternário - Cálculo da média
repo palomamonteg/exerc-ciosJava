@@ -8,11 +8,19 @@ public class Atividade1 {
 		System.out.print("Digite seu nome: ");
 		String nome = entrada.next();
 		System.out.print("\nDigite a primeira nota: ");
-		int nota = entrada.nextInt();
+		double nota = entrada.nextInt();
 		System.out.print("\nDigite a segunda nota: ");
-		int nota2 = entrada.nextInt();
+		double nota2 = entrada.nextInt();
 		double media = (nota + nota2) / 2;
 		String r = Double.toString(media);
 		r = media>7?"Aprovado!":"Reprovado!";
 		System.out.printf("\nA média de %s é %.2f. ", nome, media);
 		System.out.println(r);
+		
+		
+		
+		
+
+	}
+
+}
