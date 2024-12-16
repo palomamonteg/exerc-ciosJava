@@ -1,0 +1,20 @@
+package atv;
+
+/*Análise o código a seguir e indique o que será impresso na tela: 
+ * a) false true 
+ * b)true true 
+ * c)true false */
+
+import java.util.Scanner;
+
+public class Atividade1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String parte1 = "Curso";
+		String parte2 = "Video";
+		String parte3 = parte1 + parte2;
+		String parte4 = "CursoVideo";
+		System.out.println(parte3 == parte4);
+		System.out.println(parte3.equals(parte4));
+		
