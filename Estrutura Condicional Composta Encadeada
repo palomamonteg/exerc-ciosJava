@@ -1,5 +1,5 @@
-import java.util.Scanner;
 /* Sistema de votação */ 
+import java.util.Scanner;
 
 public class Atv2 {
 
@@ -12,15 +12,17 @@ public class Atv2 {
 		System.out.printf("Você possui %s anos", i);
 		if (i < 16) {
 			System.out.print("\nNão vota");
+		} else if (i >= 16 && i < 18 || i > 70) {
+			System.out.print("\nVoto opcional ");
 		} else {
-			if (i >= 16 && i < 18 || i > 70) {
-				System.out.print("\nVoto opcional ");
-			} else {
-				System.out.print("\nVoto obrigatório");
+			System.out.print("\nVoto obrigatório");
 			}
 		}
 		
 		
 	}
 
-}
+
+
+
+
