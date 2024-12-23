@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+/* Classificação de Idade
+Escreva um programa que peça a idade de uma pessoa e classifique-a em uma das seguintes categorias:
+- Criança (0-12 anos)
+- Adolescente (13-17 anos)
+- Adulto (18-64 anos)
+- Idoso (65 anos ou mais).
+- Caso a idade seja negativa, exiba uma mensagem de erro.*/
+
+public class Escolha {
+
+	public static void main(String[] args) {
+		Scanner tec = new Scanner(System.in);
+		System.out.print("Informa a sua idade: ");
+		int idade = tec.nextInt();
+		if (idade < 0) {
+			System.out.print("Erro. Idade não pode ser negativa. Tente novamente!");
+		} else if (idade >= 0 && idade <= 12) {
+			System.out.print("Criança");
+		} else if (idade >= 13 && idade <= 17) {
+			System.out.print("Adolescente");
+		} else if (idade >= 18 && idade <= 64) {
+			System.out.print("Adulto");
+		} else {
+			System.out.print("Idoso");
+		}
+		tec.close();
+	
+	}
+}
