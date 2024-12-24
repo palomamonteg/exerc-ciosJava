@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class Atividade1 {
+	
+/* Um programa deve calcular o preço de uma corrida de táxi com base na distância percorrida:
+Para distâncias de até 2 km, o preço fixo é R$10.
+De 2 a 10 km, o preço é R$10 + R$2 por km adicional.
+Acima de 10 km, o preço é R$10 + R$2 por km adicional até 10 km, e R$1.50 por km extra após 10 km.
+Solicite a distância ao usuário e exiba o preço. */
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner teclado = new Scanner(System.in);
+		System.out.print("Qual a distância a ser percorrida? (km): ");
+		double km = teclado.nextDouble(); 
+		if (km < 0) {
+			System.out.println("Erro! A distância percorrida não pode ser negativa!");
+		} 	else if (km <= 2) {
+			System.out.println("Valor a ser pago -> R$10.00");
+		} else if (km > 2 && km <= 10){
+			double cal = 10 + 2 * (km - 2);
+			System.out.printf("Valor a ser pago -> R$%.2f", cal);
+		} else if (km > 10) {
+			double cal2 = 10 + 2 * 8 + 1.50 * (km - 10) ;
+			System.out.printf("O valor a ser pago -> R$%.2f", cal2);
+		}
+		
+		teclado.close();
+	}
+
+}
