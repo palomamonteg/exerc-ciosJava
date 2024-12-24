@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+public class Atividade1 {
+	
+/* Categoria de IMC
+Desenvolva um programa que calcule o Índice de Massa Corporal (IMC) com base no peso e altura fornecidos pelo usuário e classifique-o de acordo com a tabela abaixo:
+Abaixo do peso: IMC < 18.5
+Peso normal: 18.5 ≤ IMC < 25
+Sobrepeso: 25 ≤ IMC < 30
+Obesidade: IMC ≥ 30.8 */
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner teclado = new Scanner(System.in);
+		System.out.print("Digite o seu peso (Kg): ");
+		double peso = teclado.nextDouble();
+		System.out.print("Digite a sua altura (m): ");
+		double altura = teclado.nextDouble();
+		double imc = peso/(altura*altura);
+		System.out.printf("O seu IMC é %.2f \n", imc);
+		if (imc < 18.5) {
+			System.out.println("Você está abaixo do peso!");
+		} else if (imc >= 18.5 && imc < 25) {
+			System.out.println("Você está na faixa de normalidade!");
+		} else if (imc >= 25 && imc < 30 ) {
+			System.out.println("Você está na faixa de sobrepeso!");
+		} else if (imc >= 30) {
+			System.out.println("Você está na faixa de obesidade!");
+		}
+		
+		teclado.close();
+		
+		
+
+	}
+
+}
