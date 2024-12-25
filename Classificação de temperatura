@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+/*Crie um programa que leia a temperatura de um dia e classifique a condição climática com base nos seguintes critérios:
+
+Se a temperatura for abaixo de 10°C, a classificação deve ser "Frio".
+Se a temperatura for de 10°C a 20°C (inclusive), a classificação deve ser "Agradável".
+Se a temperatura for de 21°C a 30°C (inclusive), a classificação deve ser "Quente".
+Se a temperatura for acima de 30°C, a classificação deve ser "Muito quente".
+O programa deve exibir a classificação com base na temperatura fornecida pelo usuário. Caso a temperatura fornecida seja um valor negativo ou maior que 50°C, 
+o programa deve exibir uma mensagem de erro informando que o valor é inválido. */
+
+public class Atividade1 {	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner teclado = new Scanner(System.in);
+		System.out.print("Informe a temperatura: °C ");
+		double temp = teclado.nextDouble();
+		if (temp < 0 || temp > 50) {
+			System.out.println("Erro! Temperatura inválida.");
+		} else if (temp < 10) {
+			System.out.println("Temperatura classificada como Fria");	
+		} else if (temp <= 20) {
+			System.out.println("Temperatura classificada como Agradável");
+		} else if (temp <= 30) {
+			System.out.println("Temperatura classificada como Quente");
+		} else {
+			System.out.println("Temperatura classificada como Muito quente");
+		} 
+		
+		teclado.close();
+		}
+	}
+
+
