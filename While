@@ -1,0 +1,21 @@
+public class Cambalhota {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	/* int cc = 0;
+	*	while (cc<4) {
+	*		System.out.println("Cambalhota " + (cc+1)); precisa deixar entre parênteses porque o + também é um símbolo de concatenação
+	*		cc++;
+	*		} 
+*/
+
+/* OU Sem gambiarra */
+
+int cc = 1;
+		while (cc <=4) {
+			System.out.println("Cambalhota " + cc);
+			cc++;
+	} 
+
+	}
+}
