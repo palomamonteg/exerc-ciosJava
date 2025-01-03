@@ -1,0 +1,30 @@
+public class Atividade2 {
+
+/*Solicite que o usuário insira números inteiros. 
+	 * O programa deve somar os números inseridos e parar quando o usuário digitar um número negativo. 
+	 * No final, exiba a soma total. */
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner teclado = new Scanner(System.in);
+		while (true) {
+		System.out.println("Digite um número inteiro (ou um número negativo para sair): ");
+		int n1 = teclado.nextInt();
+		if (n1 <0) {
+			System.out.println("Número negativo! Programa finalizado.");
+			break; 
+		}
+		System.out.println("Digite outro número inteiro (ou um número negativo para sair): ");
+		int n2 = teclado.nextInt();
+		if (n2 <0) {
+			System.out.println("Número negativo! Programa finalizado.");
+			break;
+		}
+		int soma = n1 + n2;
+		System.out.printf("A soma entre %d e %d é: %d%n", n1, n2, soma);
+		
+		}
+		teclado.close();
+ }
+}
