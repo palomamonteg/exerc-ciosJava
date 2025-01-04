@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+/*Crie um programa onde o computador escolhe um número aleatório entre 1 e 10 
+ * (use Math.random() para gerar o número). O usuário deve adivinhar o número. 
+ * Enquanto o palpite estiver errado, o programa deve dizer se o número é maior ou menor. 
+ * O jogo termina quando o usuário acerta.
+
+*/
+
+public class Atividade2 {
+	public static void main(String[] args) {
+	Scanner teclado = new Scanner(System.in);
+	int n = (int)(1 + Math.random() * 10);
+	while (true) {
+	System.out.println("adivinhe o número que estou pensando entre 1 e 10: ");
+	int palpite = teclado.nextInt();
+	if (palpite == n) {
+		System.out.printf("Uau, Você acertou! Eu realmente estava pensando no número %d.", n);
+		break;
+	} else if (palpite < n) {
+		System.out.println("Ops! Você errou! Tente novamente. \nDica: Escolha um número maior.");
+	} else if (palpite > n) {
+		System.out.println("Ops! Você errou! Tente novamente. \nDica: Escolha um número menor.");
+	}
+	}
+	
+	teclado.close();
+	
+	
+
+			
+	
+  }
+}
+	
