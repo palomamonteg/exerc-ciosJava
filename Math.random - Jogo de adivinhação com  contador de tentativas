@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+/*Solicite ao usuário que adivinhe um número entre 1 e 10.
+O número será gerado aleatoriamente pelo computador.
+Enquanto o usuário não acertar, o programa deve informar se o número correto é maior ou menor que o palpite.
+Conte o número de tentativas que o usuário fez.
+Ao final, quando o usuário acertar, exiba uma mensagem indicando o número correto e o número de tentativas realizadas.
+*/
+
+public class Atividade2 {
+	public static void main(String[] args) {
+	Scanner teclado = new Scanner(System.in);
+	int n = (int) (1 + Math.random() * 10);
+	System.out.println("Estou pensando em um número de 1 a 10. Tente advinhar qual é:  ");
+	int cont = 0;
+	while (true) {
+		int palpite = teclado.nextInt();
+		cont++;
+		if (palpite == n) {
+			System.out.printf("Yeees, Você acertou! Eu realmente estava pensando no número %d.%n", n);
+			System.out.printf("Foram necessárias %d tentativas para você acertar!", cont);
+			break;
+		} else if (palpite > n) {
+			System.out.println("Opss! Você errou.\nDigite um número menor: ");
+		} else if (palpite < n) {
+			System.out.println("Opss! Você errou.\nDigite um número maior: ");
+		}
+		
+	}
+	teclado.close();
+	
+}
+}		
