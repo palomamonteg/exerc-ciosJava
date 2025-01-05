@@ -1,0 +1,16 @@
+import java.util.Scanner;
+/*Calcule o fatorial de todos os números de 1 a 10 e exiba o resultado.*/
+
+
+public class Atividade2 {
+	public static void main(String[] args) {
+		for (int n = 1; n <= 10; n++) {
+		int cont =1;
+		
+		for (int fatorial = 1; fatorial <= n; fatorial++ ) {
+		cont *= fatorial;	
+		}
+		System.out.printf("O fatorial de %d é: %d%n", n, cont);
+		}
+	}	
+}
