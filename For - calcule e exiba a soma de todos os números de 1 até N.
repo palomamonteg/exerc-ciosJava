@@ -1,0 +1,20 @@
+import java.util.Scanner;
+/*Peça ao usuário para inserir um número N. 
+ * Depois, calcule e exiba a soma de todos os números de 1 até N. */
+
+
+public class Atividade2 {
+	public static void main(String[] args) {
+	Scanner teclado = new Scanner(System.in);
+	System.out.println("Digite um número: ");
+	int n = teclado.nextInt();
+	int cont = 0;
+	for (int soma = 1; soma <= n; soma++) {
+		cont += soma;
+	}
+	
+	System.out.printf("A soma entre 1 e %d é: %d.%n ", n, cont);
+	teclado.close();
+	}	
+}
+
