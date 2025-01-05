@@ -1,0 +1,17 @@
+import java.util.Scanner;
+/* Imprima todos os números de 1 a 100 que são divisíveis por 3 e 5.*/
+
+
+public class Atividade2 {
+	public static void main(String[] args) {
+		for (int n = 1; n <= 100; n++) {
+			if (n%3== 0 && n%5==0) {
+			System.out.println(n);
+			}
+		}
+	
+
+	}	
+}
+
+	
