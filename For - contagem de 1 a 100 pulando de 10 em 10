@@ -1,0 +1,13 @@
+import java.util.Scanner;
+/*Faça uma contagem de 1 a 100 pulando de 10 em 10 usando For */
+
+
+public class Atividade2 {
+	public static void main(String[] args) {
+		for (int cc = 10; cc <= 100; cc +=10) {
+			System.out.println(cc);
+			}
+		}
+	
+}
+	
