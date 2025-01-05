@@ -1,0 +1,20 @@
+import java.util.Scanner;
+/*Peça ao usuário para inserir um número inteiro positivo e calcule o fatorial dele usando o laço for. */
+
+
+public class Atividade2 {
+	public static void main(String[] args) {
+		Scanner teclado = new Scanner(System.in);
+		System.out.println("Digite um número para calcular o seu fatorial: ");
+		int n = teclado.nextInt();
+		int cont = 1;
+		for (int f = n; f >= 1; f--) {
+		cont *=f;
+		System.out.printf("O fatoral de %d por %d é: %d%n", n, f, cont);
+		
+		}
+		teclado.close();
+	
+
+	}	
+}
