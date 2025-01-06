@@ -1,0 +1,19 @@
+import java.util.Scanner;
+/*Peça ao usuário para digitar uma string e exiba cada caractere da string 
+ * separadamente em uma nova linha*/
+
+
+public class Atividade2 {
+	public static void main(String[] args) {
+		Scanner teclado = new Scanner(System.in);
+		System.out.println("Digite o seu nome: ");
+		String nome = teclado.next();
+		for (int str = 0; str < nome.length(); str++) {
+			System.out.println(nome.charAt(str));
+		}
+			
+		}
+		
+} 
+
+	
