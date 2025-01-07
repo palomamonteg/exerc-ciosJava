@@ -6,7 +6,7 @@ public class Atividade2 {
 	public static void main(String[] args) {
 		int n[] = {1, 2, 7, 4, 6}; //criou-se um vetor//
 		System.out.printf("O tamanho de n é: %d%n", n.length); //length é um atributo que dita a caracteristica do objeto - o tamanho desse objeto//
-		for (int vetor = 0; vetor<=n.length-1; vetor++) { 
+		for (int vetor = 0; vetor<n.length; vetor++) { 
 		//System.out.println("Na posicao " + vetor + " temos o valor " + n[vetor] + " "); //se cria um for para percorrer os vetores e imprime a variavel que guarda os vetores na posicao que percorre o for//
 		System.out.printf("Na posicao %d temos o valor %d%n", (vetor+1), n[vetor]);
 		
@@ -17,6 +17,3 @@ public class Atividade2 {
   }
 			
 }
-		
-
-
