@@ -1,0 +1,33 @@
+/*Exercícios -
+ *   Faça um programa que leia 
+ *   5 números inteiros do teclado e armazene-os em um array. Após isso, exiba o array na ordem.
+
+//Praticar criação, inicialização e manipulação básica de arrays. */
+
+import java.util.Scanner;
+
+
+public class Atividade2 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int n[] = new int[5];
+		System.out.println("Digite 5 números: ");
+		for (int pos = 0; pos < n.length; pos++) {
+			System.out.printf("Número %d: ", pos + 1);
+			n[pos] = sc.nextInt();		
+		}
+		System.out.printf("Os números digitados foram:\n");
+		
+		for (int ordem = 0; ordem < n.length; ordem++) {
+			System.out.println(n[ordem]);
+		}
+		sc.close();
+		
+		
+  }
+			
+}
+		
+
+
+	
