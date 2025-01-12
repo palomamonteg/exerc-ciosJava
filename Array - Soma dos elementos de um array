@@ -1,0 +1,48 @@
+*Exercícios -
+ *   1. Crie um programa que:
+
+- Leia 5 números inteiros.
+- Calcule e exiba a soma dos números armazenados no array.
+*/
+
+import java.util.Scanner;
+
+
+public class Atividade2 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Digite 5 números: ");
+		int n[] = new int[5];
+		for (int pos = 0; pos < n.length; pos++) {
+			System.out.printf("Número %d: " , pos + 1);
+			n[pos] = sc.nextInt();
+		}
+		
+		System.out.println("Os números digitados foram: ");
+		for (int numeros = 0; numeros < n.length; numeros++) {
+			System.out.println(n[numeros]);			
+			
+		}
+		int soma = 0;
+		System.out.printf("A soma dos números digitados é: ");
+		for (int i = 0; i < n.length; i++) {
+			soma = soma +n[i];
+		}
+		System.out.println(soma);
+		
+		sc.close();
+		
+		
+		
+		
+		
+		
+		
+		
+  }
+			
+}
+		
+
+
+	
