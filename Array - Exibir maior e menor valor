@@ -1,0 +1,53 @@
+/*Exercícios -
+ *   1. Crie um programa que:
+
+- Leia 5 números inteiros.
+- E exiba o maior e o menor valor dos números armazenados no array.
+*/
+
+import java.util.Scanner;
+
+
+public class Atividade2 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int n[] = new int[5];
+		System.out.println("Digite 5 números: ");
+		
+		for (int numeros = 0; numeros < n.length; numeros++) {
+			System.out.printf("Número %d: ", numeros + 1 );
+			n[numeros] = sc.nextInt();		
+			
+			} 
+		
+		int maior = n[0];
+		int menor = n[0];
+		
+		for (int i = 1; i < n.length; i++ ) {
+			if (n[i] > maior) {
+				maior = n[i];
+			} 
+			if (n[i] < menor) {
+				menor = n[i];
+			}
+			
+		}
+		System.out.printf("O maior número digitado foi: %d%n", maior);
+		System.out.printf("O menor número digitado foi: %d%n", menor);
+		
+		sc.close();
+			
+			
+			
+			
+			
+			
+		
+					
+			
+	}		
+}
+		
+
+
+	
