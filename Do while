@@ -1,0 +1,76 @@
+/*Exercícios -
+ *   		/*Questão 3: Validação de Entradas
+		Faça um programa que leia e valide as seguintes informações:
+		a. Nome: maior que 3 caracteres;
+		b. Idade: entre 0 e 150;
+		c. Salário: maior que zero;
+		d. Sexo: 'f' ou 'm';
+		e. Estado Civil: 's', 'c', 'v', 'd'. */
+
+import java.util.Scanner;
+	public class Atividade2 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		String nome;
+		int idade;
+		double salario;
+		String sexo;
+		String estadoCivil;
+		
+	do {
+        System.out.println("Informe o seu nome: ");
+        nome = sc.nextLine();
+        if (nome.length() <= 3) {	
+        	System.out.println("Erro!Seu nome deve conter mais de 3 caracteres");
+            
+        }
+        } while (nome.length() <= 3);
+        
+    do {
+        System.out.println("Informe a sua idade: ");
+        idade = sc.nextInt();
+	    if (idade < 0 || idade > 150) {
+            System.out.println("Erro! Digite uma idade entre 0 e 150");           
+        } 
+        } while (idade < 0 || idade > 150);
+	    
+     do {
+		System.out.println("Informe o seu salário: ");
+		salario = sc.nextDouble();
+		if (salario <= 0) {
+            System.out.println("Informe um salário válido!");
+        } 
+		} while (salario <= 0);
+		sc.nextLine();
+		
+	do {
+		System.out.println("Informe o seu sexo (F - Feminino e M - Masculino): ");
+		sexo = sc.nextLine().toUpperCase();
+		if (!sexo.equals("F") && !sexo.equals("M")) {
+            System.out.println("Erro! Informe um valor válido: 'F' ou 'M'.");     
+        } 
+		} while (!sexo.equals("F") && !sexo.equals("M"));
+
+	do {
+        System.out.println("Informe o seu estado civil ('S', 'C', 'V', 'D'): ");
+        estadoCivil = sc.nextLine().toUpperCase();
+        if (!estadoCivil.equals("S") && !estadoCivil.equals("C") &&  !estadoCivil.equals("V") && !estadoCivil.equals("D")) {
+            System.out.println("Erro! Informe um estado civil válido ('S', 'C', 'V', 'D').");
+        }
+    	} while (!estadoCivil.equals("S") && !estadoCivil.equals("C") && !estadoCivil.equals("V") && !estadoCivil.equals("D"));
+	           
+	 System.out.println("\nTodas as informações foram validadas com sucesso!");
+	 System.out.printf("Nome: %s%n", nome);
+	 System.out.printf("Idade: %d%n", idade);
+	 System.out.printf("Salário: R$%.2f%n", salario);
+	 System.out.printf("Sexo: %s%n", sexo);
+	 System.out.printf("Estado Civil: %s%n", estadoCivil);
+
+	 sc.close();
+	           
+	           
+  
+		
+    }
+		
+	}		
